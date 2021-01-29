@@ -1,4 +1,4 @@
-
+import numpy as np
 
 
 class Array:
@@ -9,7 +9,7 @@ class Array:
     """
 
     def __init__(self, array=[]):
-        self.array = array
+        self.array = np.array(array)
     
     def _len(self):
         """return the length of the array"""
@@ -47,4 +47,5 @@ class Array:
             raise ValueError(f"[index]: {idx} out of range")
     
     def __str__(self):
-        return f"{self.array}"
+        lst = self.array.tolist()
+        return f"{lst}"
