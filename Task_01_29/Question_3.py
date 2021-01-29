@@ -1,6 +1,4 @@
-# import required classes and modules
 
-#These functions are snippets code that will be added to the dynamic array class.
 
 def contains(self, value):
     """ check if the array contains the value as element"""
