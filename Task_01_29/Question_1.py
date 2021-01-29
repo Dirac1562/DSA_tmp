@@ -15,7 +15,8 @@ class Array:
         """return the length of the array"""
         if self.array is not None:
             return len(self.array)
-        return False
+        print(">>> List is None")
+        return None
     
     def _get(self, value):
         """get the element at index i"""
@@ -24,8 +25,9 @@ class Array:
             if len_array == 0:
                 return False
             elif value < len_array and value >= 0:
-                return self.array[value]
-        return False
+                return int(self.array[value])
+        print(">>> List is None")
+        return None
 
     def _set(self, value, idx):
         """replace value at an index"""
